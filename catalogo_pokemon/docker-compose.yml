@@ -1,0 +1,41 @@
+# docker-compose.yml
+
+version: '3.8'
+
+services:
+  # Serviço do Banco de Dados MySQL
+  db:
+    image: mysql:8.0
+    container_name: mysql_db
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'rootpassword'
+      MYSQL_DATABASE: 'catalogo_pokemon_db'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'password'
+    ports:
+      - "3306:3306"
+
+  # Serviço da Aplicação Django
+  web:
+    build: .
+    container_name: django_web
+    command: gunicorn catalogo_pokemon.wsgi:application --bind 0.0.0.0:10000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:10000"
+    environment:
+      - MYSQL_DATABASE=catalogo_pokemon_db
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_HOST=db # O nome do serviço do banco de dados!
+      - MYSQL_PORT=3306
+      - DJANGO_SECRET_KEY=minha-chave-secreta
+      - DEBUG=1
+    depends_on:
+      - db # Diz ao Docker para iniciar o banco ANTES da aplicação
+
+volumes:
+  mysql_data:
