@@ -26,11 +26,9 @@ SECRET_KEY = 'django-insecure-ox&vbdw$c)*1su%%ajyw!7qud$2)2&p#xgz5ia3ggq*^(2yhb&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+# settings.py
 
-ALLOWED_HOSTS_ENV = os.environ.get('DJANGO_ALLOWED_HOSTS')
-if ALLOWED_HOSTS_ENV:
-    ALLOWED_HOSTS.extend(ALLOWED_HOSTS_ENV.split(','))
+ALLOWED_HOSTS = ['wivcx82awm.us-east-1.awsapprunner.com']
 
 
 # Application definition
