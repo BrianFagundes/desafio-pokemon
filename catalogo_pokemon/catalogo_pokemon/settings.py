@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import dj_database_url # Importe a biblioteca
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -21,14 +22,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ox&vbdw$c)*1su%%ajyw!7qud$2)2&p#xgz5ia3ggq*^(2yhb&'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 # settings.py
 
-ALLOWED_HOSTS = ['wivcx82awm.us-east-1.awsapprunner.com']
+ALLOWED_HOSTS = []
+ALLOWED_HOSTS_ENV = os.environ.get('DJANGO_ALLOWED_HOSTS')
+if ALLOWED_HOSTS_ENV:
+    ALLOWED_HOSTS.extend(ALLOWED_HOSTS_ENV.split(','))
 
 
 # Application definition
@@ -77,17 +81,12 @@ WSGI_APPLICATION = 'catalogo_pokemon.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQL_DATABASE'),
-        'USER': os.environ.get('MYSQL_USER'),
-        'PASSWORD': os.environ.get('MYSQL_PASSWORD'),
-        'HOST': os.environ.get('MYSQL_HOST'), # Este será o nome do serviço do container do banco
-        'PORT': os.environ.get('MYSQL_PORT', '3306'),
-    }
-}
+# A configuração do banco de dados deve ficar assim:
+DATABASE_URL = os.environ.get('DATABASE_URL', 'sqlite:///db.sqlite3')
 
+DATABASES = {
+    'default': dj_database_url.parse(DATABASE_URL)
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
