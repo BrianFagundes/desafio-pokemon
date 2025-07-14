@@ -15,7 +15,7 @@ O desenvolvimento foi estruturado em três versões evolutivas, cada uma em sua 
 # Demonstração Rápida
 
 Acesse o link: https://wivcx82awm.us-east-1.awsapprunner.com
-Para utilizar o projeto hospedado na internet.
+Para utilizar o projeto hospedado na AWS.
 
 # Tecnologias Utilizadas
 
@@ -41,13 +41,13 @@ Cloud
 
 AWS (ECR e APP Runner)
 
-# Branch funcionalidade/v1-local-sqlite - A Prova de Conceito
+# Branch funcionalidade/v1-local-sqlite - Versão local
 
 Objetivo: Criar uma solução funcional e rápida, que não exige nenhuma dependência externa (como Docker) para rodar.
 
-# Branch funcionalidade/v2-dockerizacao - A containerização
+# Branch funcionalidade/v2-dockerizacao - A containerização e utilização do bd MYSQL
 
-Objetivo: Evoluir o projeto para o uso de containers, utilizando Docker e Docker Compose.
+Objetivo: Evoluir o projeto para o uso do banco de dados MYSQL e containers, utilizando Docker e Docker Compose.
 
 # Branch release/v3.0
 
@@ -59,9 +59,9 @@ Siga as instruções abaixo de acordo com a versão que deseja executar.
 
 # Pré-requisitos:
 
-Ter Docker, Docker Compose, MYSQL(V1 e V2) e Python instalados.
+Ter Docker, Docker Compose, MYSQL(V2 e V3) e Python instalados.
 
-# Versão 1: Rodando Localmente (Sem Docker)
+# Versão 1: Rodando Localmente
 
 Clone o repositório:
 
