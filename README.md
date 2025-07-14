@@ -59,7 +59,7 @@ Siga as instruções abaixo de acordo com a versão que deseja executar.
 
 # Pré-requisitos:
 
-Ter Docker, Docker Compose, MYSQL(V2 e V3) e Python instalados.
+Ter Docker, Docker Compose (V2 e V3), MYSQL(V2 e V3) e Python(V1, V2 e V3) instalados.
 
 # Versão 1: Rodando Localmente
 
