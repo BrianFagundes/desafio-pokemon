@@ -1,4 +1,4 @@
-# Desafio Elevential - Plataforma de Análise de Vagas
+# Desafio Elevential
 
 Este repositório contém a solução para o desafio técnico proposto pela Elevential. O projeto consiste em um catalogo de pokemons desenvolvido para o cliente Carvalho.
 
