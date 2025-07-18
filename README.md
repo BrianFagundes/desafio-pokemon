@@ -1,14 +1,12 @@
 # Desafio
 
-Este repositório contém a solução para o desafio técnico. O projeto consiste em um catalogo de pokemons desenvolvido para o cliente Carvalho.
+O seu cliente, Carvalho, é um catalogador de Pokemon. Ele precisa de um sistema para deixar mais fácil o cadastro de novas espécias que ele vem encontrando em suas pesquisas, de forma simples e rápida, através de um sistema web. Carvalho já tem uma lista com 150 desses Pokemons, e o sistema deve vir com esses Pokemons pré-cadastrados.
 
 # Url do video de demonstração
 
 https://youtu.be/1cIypt7pGTc
 
 # Escopo
-
-O seu cliente, Carvalho, é um catalogador de Pokemon. Ele precisa de um sistema para deixar mais fácil o cadastro de novas espécias que ele vem encontrando em suas pesquisas, de forma simples e rápida, através de um sistema web. Carvalho já tem uma lista com 150 desses Pokemons, e o sistema deve vir com esses Pokemons pré-cadastrados.
 
 O desenvolvimento foi estruturado em três versões evolutivas, cada uma em sua própria branch, para demonstrar diferentes abordagens desde uma solução local e simples até uma aplicação conteinerizada e pronta para deploy na nuvem.
 
