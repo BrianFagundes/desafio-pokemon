@@ -1,6 +1,6 @@
-# Desafio Elevential
+# Desafio
 
-Este repositório contém a solução para o desafio técnico proposto pela Elevential. O projeto consiste em um catalogo de pokemons desenvolvido para o cliente Carvalho.
+Este repositório contém a solução para o desafio técnico. O projeto consiste em um catalogo de pokemons desenvolvido para o cliente Carvalho.
 
 # Url do video de demonstração
 
@@ -11,11 +11,6 @@ https://youtu.be/1cIypt7pGTc
 O seu cliente, Carvalho, é um catalogador de Pokemon. Ele precisa de um sistema para deixar mais fácil o cadastro de novas espécias que ele vem encontrando em suas pesquisas, de forma simples e rápida, através de um sistema web. Carvalho já tem uma lista com 150 desses Pokemons, e o sistema deve vir com esses Pokemons pré-cadastrados.
 
 O desenvolvimento foi estruturado em três versões evolutivas, cada uma em sua própria branch, para demonstrar diferentes abordagens desde uma solução local e simples até uma aplicação conteinerizada e pronta para deploy na nuvem.
-
-# Demonstração Rápida
-
-Acesse o link: https://wivcx82awm.us-east-1.awsapprunner.com
-Para utilizar o projeto hospedado na AWS.
 
 # Tecnologias Utilizadas
 
@@ -119,4 +114,4 @@ http://127.0.0.1:8000/
 
 # Versão 3: Deploy
 
-Acesse a url: https://wivcx82awm.us-east-1.awsapprunner.com
+Acesse a url: https://wivcx82awm.us-east-1.awsapprunner.com - Pausado.
