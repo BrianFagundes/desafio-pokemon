@@ -2,6 +2,40 @@
 
 O seu cliente, Carvalho, é um catalogador de Pokemon. Ele precisa de um sistema para deixar mais fácil o cadastro de novas espécias que ele vem encontrando em suas pesquisas, de forma simples e rápida, através de um sistema web. Carvalho já tem uma lista com 150 desses Pokemons, e o sistema deve vir com esses Pokemons pré-cadastrados.
 
+# Telas
+
+Home
+
+<img width="1904" height="910" alt="image" src="https://github.com/user-attachments/assets/e2c82c46-0096-436b-9544-a874223c8929" />
+
+Gerenciar tipos
+
+<img width="1904" height="908" alt="image" src="https://github.com/user-attachments/assets/7cecac27-ba7c-4397-96b4-e7ce4b6cf225" />
+
+Adicionar tipo
+
+<img width="1914" height="906" alt="image" src="https://github.com/user-attachments/assets/fd300f15-ed2d-4c40-b111-dd81719c6a24" />
+
+Editar tipo
+
+<img width="1917" height="897" alt="image" src="https://github.com/user-attachments/assets/2e4f5006-3e25-4f41-acaa-e7a2d2579d1c" />
+
+Confimação de exclusão (tipo)
+
+<img width="1919" height="911" alt="image" src="https://github.com/user-attachments/assets/57289c04-9629-438a-a296-cb609a622255" />
+
+Adicionar pokémon
+
+<img width="1916" height="905" alt="image" src="https://github.com/user-attachments/assets/b8eaf084-a999-442e-8e7e-7a00012d3870" />
+
+Editar pokémon
+
+<img width="1913" height="899" alt="image" src="https://github.com/user-attachments/assets/ef0213e0-f668-48f5-b865-e74b6c3f11a0" />
+
+Confimação de exclusão (pokémon)
+
+<img width="1916" height="893" alt="image" src="https://github.com/user-attachments/assets/6a60ee66-fee1-4290-ba33-07e6a6ef29cf" />
+
 # Url do video de demonstração
 
 https://youtu.be/1cIypt7pGTc
